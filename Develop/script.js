@@ -37,6 +37,9 @@ $(function () {
   // to the local storage and save it
   // saves the info to the time text area it is in 
   // the key being the time and value being the information saved
+
+
+
   $(`.saveBtn`).on(`click`,function(){
     var value = $(this).siblings(`.description`).val();
     var time = $(this).parent().attr(`id`);
@@ -46,7 +49,6 @@ $(function () {
     
     $(`#` + i + ` .description`).val(localStorage.getItem(i))
   }
-
   });
 
 
